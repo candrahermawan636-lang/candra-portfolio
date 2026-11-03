@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Candra Hermawan — CRM & Operations | Digital Content Production</title>
+  <meta name="description" content="Candra Hermawan — CRM operations, student management, customer support, reporting and digital video production. Portfolio of real work from Kuningan, West Java, Indonesia.">
+  <meta name="theme-color" content="#04060c">
+  <meta name="color-scheme" content="dark">
+  <meta name="author" content="Candra Hermawan">
+  <meta name="robots" content="index,follow">
+  <meta property="og:locale" content="en_US">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304060c'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='28' text-anchor='middle' fill='%23fff'%3ECH%3C/text%3E%3Ccircle cx='54' cy='50' r='4' fill='%233b82ff'/%3E%3C/svg%3E">
+  <meta property="og:title" content="Candra Hermawan — CRM & Operations | Digital Content">
+  <meta property="og:description" content="Building systems. Creating experiences.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Candra Hermawan","jobTitle":"CRM & Operations | Digital Content Production","address":{"@type":"PostalAddress","addressLocality":"Kuningan","addressRegion":"West Java","addressCountry":"ID"}}
+  </script>
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="mono">CH — PORTFOLIO</span>
+      <div class="loader__bar"><i id="loaderBar"></i></div>
+      <span class="mono" id="loaderPct">00</span>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"><i class="cursor__dot"></i><i class="cursor__ring"></i></div>
+
+  <a class="skip" href="#mainContent">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="Candra Hermawan — home">CH<span>.</span></a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><i></i><i></i></button>
+  </header>
+
+  <main id="top">
+    <span id="mainContent" class="visually-hidden" tabindex="-1">Main content</span>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="label reveal" id="heroLabel"></p>
+          <h1 class="hero__title" id="heroTitle"></h1>
+          <p class="hero__desc reveal" id="heroDesc"></p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#work" id="ctaPrimary" data-cursor="hover"></a>
+            <a class="btn btn--ghost" href="#contact" id="ctaSecondary" data-cursor="hover"></a>
+          </div>
+        </div>
+        <figure class="hero__visual reveal" id="heroVisual">
+          <div class="hero__frame" data-parallax="0.06"><div class="hero__img" id="heroImg"></div></div>
+          <span class="chip chip--a" data-parallax="-0.08">CRM</span>
+          <span class="chip chip--b" data-parallax="0.12">Reporting</span>
+          <span class="chip chip--c" data-parallax="-0.05">Video</span>
+          <figcaption class="hero__meta mono"><span id="heroLoc"></span><span id="heroClock"></span></figcaption>
+        </figure>
+      </div>
+      <div class="hero__scroll mono" aria-hidden="true">SCROLL</div>
+    </section>
+
+    <section class="stats" aria-label="Experience at a glance">
+      <ul class="stats__list" id="stats"></ul>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="section__head reveal"><span class="idx mono">01</span><h2 id="aboutTitle">About</h2></div>
+      <div class="about">
+        <h3 class="about__lead reveal" id="aboutLead"></h3>
+        <div class="about__body">
+          <div id="aboutText" class="reveal"></div>
+          <ul class="pillars" id="pillars"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="expTitle">
+      <div class="section__head reveal"><span class="idx mono">02</span><h2 id="expTitle">Experience</h2></div>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section class="section" id="work" aria-labelledby="workTitle">
+      <div class="section__head reveal"><span class="idx mono">03</span><h2 id="workTitle">Selected Work</h2></div>
+      <div class="filters reveal" id="filters" role="group" aria-label="Filter projects by category"></div>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section class="section" id="expertise" aria-labelledby="expertTitle">
+      <div class="section__head reveal"><span class="idx mono">04</span><h2 id="expertTitle">Expertise</h2></div>
+      <div class="expertise" id="expertise"></div>
+    </section>
+
+    <section class="section" id="tools" aria-labelledby="toolsTitle">
+      <div class="section__head reveal"><span class="idx mono">05</span><h2 id="toolsTitle">Tools & Technologies</h2></div>
+      <ul class="tools" id="toolsGrid"></ul>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <p class="label reveal">CONTACT</p>
+      <h2 class="contact__title" id="contactTitle"></h2>
+      <ul class="contact__list" id="contactList"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="mono" id="footName"></span>
+    <a class="mono" href="#top">Back to top ↑</a>
+  </footer>
+
+  <dialog class="project" id="projectDialog" aria-labelledby="pdTitle">
+    <div class="project__shell">
+      <button class="close" id="pdClose" aria-label="Close project" data-cursor="hover">✕</button>
+      <div class="project__stage">
+        <div class="stage" id="pdStage"></div>
+        <div class="thumbs" id="pdThumbs" role="tablist" aria-label="Project media"></div>
+        <p class="stage__cap mono" id="pdCaption"></p>
+      </div>
+      <div class="project__info">
+        <p class="label" id="pdCat"></p>
+        <h3 id="pdTitle"></h3>
+        <p class="project__long" id="pdLong"></p>
+        <h4 class="mono">TOOLS</h4>
+        <ul class="tags" id="pdTools"></ul>
+        <p class="note mono" id="pdNote" hidden>No media attached to this project yet.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <button class="close" id="lbClose" aria-label="Close image viewer">✕</button>
+    <button class="lb__nav lb__prev" id="lbPrev" aria-label="Previous image">←</button>
+    <figure><div id="lbImgWrap"></div><figcaption class="mono" id="lbCap"></figcaption></figure>
+    <button class="lb__nav lb__next" id="lbNext" aria-label="Next image">→</button>
+  </dialog>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
